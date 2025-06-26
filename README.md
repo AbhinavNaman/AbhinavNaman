@@ -13,11 +13,23 @@
     </p>
     <p>
       <strong>Links:</strong><br />
-      <a href="https://linkedin.com/in/abhinav-naman" target="_blank">LinkedIn</a> ||
-      <a href="mailto:abhinavnaman3@gmail.com"  target="_blank">Email</a> ||
-      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Download Resume</a> ||
-      <a href="https://medium.com/@abhinavnaman3"  target="_blank">Medium Blogs</a>
     </p>
+        <table>
+    <tr>
+        <td>
+          <a href="https://linkedin.com/in/abhinav-naman" target="_blank">LinkedIn</a>
+        </td>
+        <td>
+          <a href="mailto:abhinavnaman3@gmail.com"  target="_blank">Email</a>
+        </td>
+        <td>
+          <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Resume</a>
+        </td>
+      <td>
+          <a href="https://medium.com/@abhinavnaman3"  target="_blank">Medium Blogs</a>
+        </td>
+    </tr>
+</table>
   </section>
 
   <hr />
