@@ -13,9 +13,9 @@
     </p>
     <p>
       <strong>Links:</strong><br />
-      <a href="https://linkedin.com/in/abhinav-naman" target="_blank">LinkedIn</a> |
-      <a href="mailto:abhinavnaman3@gmail.com"  target="_blank">Email</a> |
-      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Download Resume</a> |
+      <a href="https://linkedin.com/in/abhinav-naman" target="_blank">LinkedIn</a> ||
+      <a href="mailto:abhinavnaman3@gmail.com"  target="_blank">Email</a> ||
+      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Download Resume</a> ||
       <a href="https://medium.com/@abhinavnaman3"  target="_blank">Medium Blogs</a>
     </p>
   </section>
@@ -25,22 +25,31 @@
   <!-- Tech Stack -->
   <section>
     <h2>Tech Stack</h2>
-    <h3>Frontend</h3>
-    <ul>
+    <table>
+    <tr>
+        <th>Frontend</th>
+        <th>Backend & Database</th>
+        <th>Cloud & DevOps</th>
+    </tr>
+    <tr>
+        <td>
+          <ul>
       <li>React.js</li>
       <li>Next.js</li>
       <li>SvelteKit</li>
     </ul>
-    <h3>Backend & Database</h3>
-    <ul>
+        </td>
+        <td>
+            <ul>
       <li>Node.js</li>
       <li>Express</li>
       <li>MongoDB</li>
       <li>PostgreSQL</li>
       <li>Firebase</li>
     </ul>
-    <h3>Cloud & DevOps</h3>
-    <ul>
+        </td>
+        <td>
+            <ul>
       <li>AWS</li>
       <li>Docker</li>
       <li>Terraform</li>
@@ -48,6 +57,9 @@
       <li>GitHub Actions</li>
       <li>GitLab CI</li>
     </ul>
+        </td>
+    </tr>
+</table>
   </section>
 
   <hr />
@@ -106,20 +118,6 @@
   </section>
 
   <hr />
-
-
-
-  <hr />
-
-  <!-- Resume Viewer -->
-  <section>
-    <h2>View My Resume</h2>
-    <p>
-      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/preview" target="_blank">
-        Open Resume in Google Drive
-      </a>
-    </p>
-  </section>
 
 </body>
 </html>
