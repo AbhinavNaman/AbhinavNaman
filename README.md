@@ -6,6 +6,265 @@
   <title>Abhinav Naman | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
+  <style>
+  /* Reset & Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  #hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: #0d1117;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: #c9d1d9;
+    margin-bottom: 0.5rem;
+  }
+
+  .desc {
+    color: #8b949e;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    background: #ddd;
+  }
+
+  .scroll-down {
+    margin-top: 2rem;
+    animation: bounce 2s infinite;
+    font-size: 1.5rem;
+    color: #c9d1d9;
+  }
+
+  /* Animated background */
+  .animated-bg {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(-60deg, #111 50%, #333 50%);
+    animation: slide 15s ease-in-out infinite alternate;
+    z-index: 0;
+    opacity: 0.1;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(-25%); }
+    100% { transform: translateX(25%); }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Tech Stack */
+  #techstack .tech-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .tech-bubbles {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #161b22;
+    border-radius: 1rem;
+    border: 1px solid #30363d;
+    overflow: hidden;
+    display: none;
+  }
+
+  .tech-bubbles img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: float 10s infinite linear;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .tech-grid div {
+    background: #1f2937;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(100px, 50px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  /* Experience & Projects */
+  .exp-card, .project {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .exp-card h3, .project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Blog Section */
+  #blog ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #blog li {
+    margin: 0.5rem 0;
+  }
+
+  /* Resume Iframe */
+  iframe {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: white;
+  }
+
+  /* Contact Section */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  input, textarea {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    color: black;
+  }
+
+  button[type="submit"] {
+    padding: 0.75rem;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background: #ccc;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #0a0a0a;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  /* Responsive */
+  @media screen and (min-width: 768px) {
+    .tech-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .tech-bubbles {
+      display: block;
+    }
+  }
+</style>
+
 </head>
 <body class="dark">
 
