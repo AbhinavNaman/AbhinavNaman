@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhinav Naman | Portfolio</title>
-</head>
 <body>
 
   <!-- Hero Section -->
@@ -123,12 +118,6 @@
         Open Resume in Google Drive
       </a>
     </p>
-    <iframe
-      src="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/preview"
-      width="100%"
-      height="500"
-      title="Resume Preview"
-    ></iframe>
   </section>
 
 </body>
