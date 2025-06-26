@@ -14,8 +14,9 @@
     <p>
       <strong>Links:</strong><br />
       <a href="https://linkedin.com/in/abhinav-naman" target="_blank">LinkedIn</a> |
-      <a href="mailto:abhinavnaman3@gmail.com">Email</a> |
-      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Download Resume</a>
+      <a href="mailto:abhinavnaman3@gmail.com"  target="_blank">Email</a> |
+      <a href="https://drive.google.com/file/d/1dvgbiI9dBi1u9N3VQaQZt5QLk4TRmK9O/view" target="_blank">Download Resume</a> |
+      <a href="https://medium.com/@abhinavnaman3"  target="_blank">Medium Blogs</a>
     </p>
   </section>
 
@@ -54,6 +55,8 @@
   <!-- Experience -->
   <section>
     <h2>Experience</h2>
+    <ol>
+      <li>
     <h3>Pluralsight – DevOps Intern</h3>
     <p><em>Jan 2025 – Present</em></p>
     <p>
@@ -61,18 +64,24 @@
       Built GitLab CI pipelines to validate Kubernetes deployments.
       Reduced manual DevOps overhead by 70%.
     </p>
+        </li>
+      <li>
     <h3>Profile.fyi – SDE Intern</h3>
     <p><em>Aug – Nov 2024</em></p>
     <p>
       Developed SvelteKit-based UI and OG image/email APIs.
       Served 35K+ users with under 200ms page loads.
     </p>
+        </li>
+      <li>
     <h3>Edcults – Full Stack Intern</h3>
     <p><em>Jun – Aug 2024</em></p>
     <p>
       Built SEO-optimized Next.js pages.
       Improved performance metrics by 30%.
     </p>
+        </li>
+    </ol>
   </section>
 
   <hr />
@@ -80,33 +89,25 @@
   <!-- Projects -->
   <section>
     <h2>Projects</h2>
+    <ol>
+      <li>
     <h3>Ecom Price Tracker</h3>
     <p>Next.js + MongoDB scraper with email alerts for price drops.</p>
+      </li>
+      <li>
     <h3>Terraform Metrics Dashboard</h3>
     <p>Analyzed CI metrics from GitHub runner logs and visualized via Grafana.</p>
+    </li>
+      <li>
     <h3>Memories MERN App</h3>
     <p>Social media app with tags, likes, uploads, and Google Auth.</p>
+      </li>
+    </ol>
   </section>
 
   <hr />
 
-  <!-- Blogs -->
-  <section>
-    <h2>Latest Blogs</h2>
-    <ul>
-      <li>
-        <a href="https://medium.com/@abhinavnaman3/what-is-docker-bake-46dc909366c9" target="_blank">
-          🐳 What is Docker Bake?
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">🚀 Infrastructure as Code: Terraform & GitHub Actions</a>
-      </li>
-      <li>
-        <a href="#" target="_blank">🧠 How RAG is Changing AI Retrieval</a>
-      </li>
-    </ul>
-  </section>
+
 
   <hr />
 
