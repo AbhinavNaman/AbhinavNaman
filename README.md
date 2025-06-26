@@ -79,57 +79,65 @@
   <!-- Experience -->
   <section>
     <h2>Experience</h2>
-    <ol>
-      <li>
-    <h3>Pluralsight – DevOps Intern</h3>
-    <p><em>Jan 2025 – Present</em></p>
+          <table>
+    <tr>
+        <td>
+          <h3>Pluralsight – DevOps Intern</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+<p><em>Jan 2025 – Present</em></p>
     <p>
-      Automated infrastructure monitoring with Terraform and Grafana.
-      Built GitLab CI pipelines to validate Kubernetes deployments.
-      Reduced manual DevOps overhead by 70%.
-    </p>
-        </li>
-      <li>
-    <h3>Profile.fyi – SDE Intern</h3>
-    <p><em>Aug – Nov 2024</em></p>
+      <ul>
+        <li>Collaborated in an Agile development environment to automate infrastructure monitoring and metrics collection
+using Terraform IaC and GitHub Actions CI/CD pipelines, implementing TypeScript-based solutions</li>
+        <li>Constructed Grafana dashboards to improve system reliability and reduce manual tracking by 70%.</li>
+        <li>Developed automated CI/CD pipelines using Python and GitLab CI to enforce Kubernetes best practices and
+container orchestration, improving deployment efficiency by 50% and reducing configuration errors.</li>
+      </ul>
+    </p>          
+        </td>
+    </tr>
+</table>
+          <table>
+    <tr>
+        <td>
+          <h3>Profile.fyi – SDE Intern</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+ <p><em>Aug – Nov 2024</em></p>
     <p>
-      Developed SvelteKit-based UI and OG image/email APIs.
-      Served 35K+ users with under 200ms page loads.
-    </p>
-        </li>
-      <li>
-    <h3>Edcults – Full Stack Intern</h3>
-    <p><em>Jun – Aug 2024</em></p>
+      <ul>
+        <li>Developed responsive web applications and dynamic user interfaces using SvelteKit, Tailwind CSS, and modern
+component libraries, delivering scalable frontend solutions that served 35,000+ active users with 99.9% uptime.</li>
+        <li>API development and integration of backend features for OG image and email template generation using Node.js</li>
+      </ul>
+    </p>       
+        </td>
+    </tr>
+</table>
+     <table>
+    <tr>
+        <td>
+          <h3>Edcults – Full Stack Intern</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+  <p><em>Jun – Aug 2024</em></p>
     <p>
-      Built SEO-optimized Next.js pages.
-      Improved performance metrics by 30%.
-    </p>
-        </li>
-    </ol>
+      <ul>
+        <li> Building scalable and efficiet frontend using React.js and Next.js, using modular components based UI, enhanced SEO by 12%. API integration using Node.js </li>
+      </ul>
+    </p>  
+        </td>
+    </tr>
+</table>
+        
   </section>
-
-  <hr />
-
-  <!-- Projects -->
-  <section>
-    <h2>Projects</h2>
-    <ol>
-      <li>
-    <h3>Ecom Price Tracker</h3>
-    <p>Next.js + MongoDB scraper with email alerts for price drops.</p>
-      </li>
-      <li>
-    <h3>Terraform Metrics Dashboard</h3>
-    <p>Analyzed CI metrics from GitHub runner logs and visualized via Grafana.</p>
-    </li>
-      <li>
-    <h3>Memories MERN App</h3>
-    <p>Social media app with tags, likes, uploads, and Google Auth.</p>
-      </li>
-    </ol>
-  </section>
-
-  <hr />
 
 </body>
 </html>
