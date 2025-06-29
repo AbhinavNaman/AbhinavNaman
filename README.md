@@ -5,7 +5,7 @@
   <!-- Hero Section -->
   <section>
     <h1>Abhinav Naman</h1>
-    <h2>Full Stack Developer & DevOps Enthusiast</h2>
+    <h2>Full Stack & DevOps </h2>
     <p>
       I am a Full Stack Developer and DevOps Enthusiast with experience in building scalable applications and automating infrastructure.
       I’ve interned at Pluralsight and Profile.fyi, worked on CI/CD, OG images, cloud infra, and more.
