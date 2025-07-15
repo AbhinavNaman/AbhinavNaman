@@ -87,7 +87,7 @@
     </tr>
             <tr>
         <td>
-<p><em>Jan 2025 – Present</em></p>
+<p><em>Jan 2025 – Jun 2025</em></p>
     <p>
       <ul>
         <li>Collaborated in an Agile development environment to automate infrastructure monitoring and metrics collection
@@ -133,6 +133,24 @@ component libraries, delivering scalable frontend solutions that served 35,000+ 
         <li> Building scalable and efficiet frontend using React.js and Next.js, using modular components based UI, enhanced SEO by 12%. API integration using Node.js </li>
       </ul>
     </p>  
+        </td>
+    </tr>
+</table>
+
+ <table>
+    <tr>
+        <td>
+          <h3>JOESHH Inc – UIUX design Intern</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+ <p><em>Oct 2023 - Dec 2023</em></p>
+    <p>
+      <ul>
+        <li>Worked on 50% of Major League Rugby website, focusing on product design for a responsive website. Focused of creating a better User Experience and Information in One sight website </li>
+      </ul>
+    </p>       
         </td>
     </tr>
 </table>
