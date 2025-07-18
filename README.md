@@ -79,6 +79,23 @@
   <!-- Experience -->
   <section>
     <h2>Experience</h2>
+      <table>
+    <tr>
+        <td>
+          <h3>EVALLO DIGITAL PRODUCTS – Full Stack Engineer (FTE)</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+<p><em>July 2025 - Present</em></p>
+    <p>
+      <ul>
+        <li>Working with MERN stack, currently fixing frontend bugs and stabilizing the platform. Building features for custom projects and shipping to prod</li>
+      </ul>
+    </p>          
+        </td>
+    </tr>
+</table>
           <table>
     <tr>
         <td>
