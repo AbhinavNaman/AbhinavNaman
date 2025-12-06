@@ -1,26 +1,70 @@
-name: Update README date daily
+name: Daily README date updater
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '00 00 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
 
-    - name: Update date in README
-      run: |
-        NOW=$(date -u +"%Y-%m-%d")
-        sed -i "s/^Date : .*/Date : $NOW/" README.md
+      - name: Show current README date (for debug)
+        run: grep -n -E '^Date *:' README.md || true
 
-    - name: Commit & push changes
-      run: |
-        git config user.name "README-bot"
-        git config user.email "readme-bot@example.com"
-        git add README.md
-        git diff --quiet && echo "No changes, skipping commit" || git commit -m "chore: update README date to $NOW" && git push
+      - name: Compute today's date in Asia/Kolkata and update README
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          # compute day, month, year in Asia/Kolkata
+          DAY=$(date '+%-d')
+          MONTH=$(date '+%b')
+          YEAR=$(date '+%Y')
+
+          # ordinal suffix (st, nd, rd, th)
+          case $DAY in
+            1|21|31) ORD="st" ;;
+            2|22) ORD="nd" ;;
+            3|23) ORD="rd" ;;
+            *) ORD="th" ;;
+          esac
+
+          NEW_DATE="${DAY}${ORD} ${MONTH} ${YEAR}"
+          echo "New date to write: $NEW_DATE"
+
+          # Replace the line that starts with "Date" (e.g., "Date : 7th Dec 2025")
+          # This keeps the leading "Date" part intact and replaces the rest of the line.
+          if grep -q -E '^Date *:' README.md; then
+            sed -i -E "s/^(Date *:).*/\1 $NEW_DATE/" README.md
+            echo "Updated README.md"
+          else
+            # If no Date line exists, append it at the end (you can change location)
+            echo "Date : $NEW_DATE" >> README.md
+            echo "Appended Date line to README.md"
+          fi
+
+          echo "---- Resulting line:"
+          grep -n -E '^Date *:' README.md || true
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "readme-bot"
+          git config user.email "actions@github.com"
+
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git add README.md
+          git commit -m "chore: update README date to $NEW_DATE"
+          git push origin HEAD:${{ github.ref_name }}
