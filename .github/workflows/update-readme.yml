@@ -57,8 +57,8 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          git config user.name "readme-bot"
-          git config user.email "actions@github.com"
+          git config user.name "AbhinavNaman"
+          git config user.email "abhinavnaman3@gmail.com"
 
           if git diff --quiet; then
             echo "No changes to commit."
