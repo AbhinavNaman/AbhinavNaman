@@ -53,6 +53,7 @@
         </td>
         <td>
             <ul>
+      <li>Go (Gin)</li>
       <li>Node.js</li>
       <li>Express</li>
       <li>MongoDB</li>
@@ -79,6 +80,31 @@
   <!-- Experience -->
   <section>
     <h2>Experience</h2>
+     <table>
+    <tr>
+        <td>
+          <h3>Source Asia Pvt. Ltd., Bengaluru: Founding Software Engineer (FTE)</h3>
+        </td>
+    </tr>
+            <tr>
+        <td>
+<p><em>September 2025 - Present</em></p>
+    <p>
+      <ul>
+        <li>DesignedandimplementedscalablebackendservicesusingGo(Gin)following aclean controller–service–repository
+architecture.Ensured API consistency with DTOs, error handling, and standardized success/error responses.</li>
+<li>Developed REST APIs for hierarchical entities (Clients → Units → Departments) with optimized database queries
+using GORM and PostgreSQL.</li>
+<li>Integrated IoT event ingestion pipeline using MQTT, handling real-time bin/machine events with retry logic, backoff,
+and fault tolerance.</li>
+<li>Worked on event consumers, background processors, and graceful shutdowns for high-reliability services.
+<li>Collaborated on production-grade features including authentication middleware, pagination, filtering, and audit
+ready data models.</li>
+      </ul>
+    </p>          
+        </td>
+    </tr>
+</table>
       <table>
     <tr>
         <td>
@@ -87,10 +113,11 @@
     </tr>
             <tr>
         <td>
-<p><em>July 2025 - Present</em></p>
+<p><em>July 2025 - September 2025</em></p>
     <p>
       <ul>
-        <li>Working with MERN stack, currently fixing frontend bugs and stabilizing the platform. Building features for custom projects and shipping to prod</li>
+        <li>Worked on MERN stack, building and shipping features for the Evallo Scheduling Application, Build features like
+Availability, calendar app, planner app, meeting scheduling app, Holiday feature etc</li>
       </ul>
     </p>          
         </td>
@@ -173,8 +200,6 @@ component libraries, delivering scalable frontend solutions that served 35,000+ 
 </table>
         
   </section>
-
-  Date : 7th Dec 2025
 
 </body>
 </html>
